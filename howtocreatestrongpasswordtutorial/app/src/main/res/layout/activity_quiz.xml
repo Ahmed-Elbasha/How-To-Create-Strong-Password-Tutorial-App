@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.ahmedelbasha.howtocreatestrongpasswordtutorial.MainActivity">>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:src="@drawable/tutorial_image"
+        android:scaleType="centerCrop"
+        android:id="@+id/tutorial_image_view"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="How To Create Strong Password Tutorial"
+        android:layout_below="@id/tutorial_image_view"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textStyle="bold"
+        android:id="@+id/tutorial_main_heading"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tutorial_main_heading"
+        android:layout_above="@id/submit_button"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Now that you aware of how to create strong password take this small survey."
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textStyle="bold"
+                android:textAppearance="?android:textAppearanceSmall"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Did you know about the ways to make your password stronger before this tutorial:"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:textStyle="bold"
+                android:textAppearance="?android:textAppearanceSmall"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:id="@+id/selection_group_of_first_question">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes I Know."
+                    android:id="@+id/yes_i_know_radio_button"
+                    android:textAppearance="?android:textAppearanceMedium"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No I Didnt."
+                    android:id="@+id/no_i_didnt_radio_button"
+                    android:textAppearance="?android:textAppearanceMedium"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Somehow i have knowledge about it."
+                    android:id="@+id/somehow_radio_button"
+                    android:textAppearance="?android:textAppearanceMedium"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Is this tutorial was useful for you?"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:textStyle="bold"
+                android:textAppearance="?android:textAppearanceSmall"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:id="@+id/selection_group_of_second_question">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes."
+                    android:id="@+id/yes_its_useful_radio_button"
+                    android:textAppearance="?android:textAppearanceMedium"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No."
+                    android:id="@+id/no_its_not_radio_button"
+                    android:textAppearance="?android:textAppearanceMedium"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How do you rate the content of this tutorial?"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:textStyle="bold"
+                android:textAppearance="?android:textAppearanceSmall"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:id="@+id/selection_group_of_third_question">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Very Satisfied."
+                    android:id="@+id/very_satisfied_radio_button"
+                    android:textAppearance="?android:textAppearanceMedium"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Satisfied."
+                    android:id="@+id/satisfied_radio_button"
+                    android:textAppearance="?android:textAppearanceMedium"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fair."
+                    android:id="@+id/fair_radio_button"
+                    android:textAppearance="?android:textAppearanceMedium"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bad."
+                    android:id="@+id/bad_radio_button"
+                    android:textAppearance="?android:textAppearanceMedium"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Very Bad."
+                    android:id="@+id/very_bad_radio_button"
+                    android:textAppearance="?android:textAppearanceMedium"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Would you recommend this tutorial for someone in the future?"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:textStyle="bold"
+                android:textAppearance="?android:textAppearanceSmall"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:id="@+id/selection_group_of_fourth_question">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes."
+                    android:id="@+id/yes_i_recommend_radio_button"
+                    android:textAppearance="?android:textAppearanceMedium"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No."
+                    android:id="@+id/no_iam_not_radio_button"
+                    android:textAppearance="?android:textAppearanceMedium"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="do you have any other comments about the tutorial?"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:textStyle="bold"
+                android:textAppearance="?android:textAppearanceSmall"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:hint="Notes."
+                android:id="@+id/other_comments_user_input"
+                android:inputType="textMultiLine"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:background="#03A9F4"
+        android:textColor="@android:color/white"
+        android:id="@+id/submit_button"/>
+
+</RelativeLayout>
